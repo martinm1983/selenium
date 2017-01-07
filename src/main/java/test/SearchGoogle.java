@@ -1,19 +1,22 @@
 package test;
 
 import org.openqa.selenium.By;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+
 public class SearchGoogle {
 
+	private static final Logger log = Logger.getLogger(SearchGoogle.class);
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 			
 //			System.setProperty("webdriver.gecko.driver", "driver/geckodriver");
 //			WebDriver ffdriver = new FirefoxDriver();
-			
+			log.info("TestMessage");
 			System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
 			WebDriver chdriver = new ChromeDriver();
 			exec (chdriver);
