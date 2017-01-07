@@ -16,7 +16,6 @@ public class SearchGoogle {
 			
 			System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
 			WebDriver chdriver = new ChromeDriver();
-			
 			exec (chdriver);
 			
 //			exec (ffdriver);
